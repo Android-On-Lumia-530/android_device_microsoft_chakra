@@ -19,10 +19,10 @@
 #
 # Everything in this directory will become public
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := device/microsoft/chakra
 
 # device specific vendor blobs
-$(call inherit-product-if-exists, vendor/motorola/otus/otus-vendor.mk)
+$(call inherit-product-if-exists, vendor/microsoft/chakra/chakra-vendor.mk)
 
 # Ramdisk
  PRODUCT_COPY_FILES += \
