@@ -59,10 +59,10 @@ void vendor_load_properties()
     if (platform != ANDROID_TARGET)
         return;
 
-    property_override("ro.product.model", "Moto E");
-    radio = property_get("ro.boot.radio");
+    property_override("ro.product.model", "Lumia 535");
+    /*radio = property_get("ro.boot.radio");
     if (radio == "0x1") {
-        /* xt1505 */
+        /* xt1505 
         property_override("ro.product.device", "otus");
         property_override("ro.build.product", "otus");
         property_override("ro.build.description", "otus_retuglb-user 5.0.2 LXC22.99-12 11 release-keys");
@@ -72,7 +72,7 @@ void vendor_load_properties()
         property_set("persist.radio.multisim.config", "");
     }
     else if (radio == "0x5") {
-        /* xt1506 */
+        /* xt1506 
         property_override("ro.product.device", "otus_ds");
         property_override("ro.build.product", "otus_ds");
         property_override("ro.build.description", "otus_reteu_ds-user 5.0.2 LXC22.99-13 11 release-keys");
@@ -85,7 +85,7 @@ void vendor_load_properties()
         property_set("ro.telephony.ril.config", "simactivation,sim2gsmonly");
     }
     else if (radio == "0x6") {
-        /* xt1511 */
+        /* xt1511 
         property_override("ro.product.device", "otus");
         property_override("ro.build.product", "otus");
         property_override("ro.build.description", "otus_retuaws-user 5.0.2 LXC22.99-12 10 release-keys");
@@ -95,5 +95,5 @@ void vendor_load_properties()
         property_set("persist.radio.multisim.config", "");
     }
     device = property_get("ro.product.device");
-    INFO("Found radio id: %s setting build properties for %s device\n", radio.c_str(), device.c_str());
+    INFO("Found radio id: %s setting build properties for %s device\n", radio.c_str(), device.c_str());*/
 }
